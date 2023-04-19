@@ -17,7 +17,7 @@ spec:
   containers:
     - name: catalogue
       imagePullPolicy: Always
-      image: sivaram1206/catalogue:v1
+      image: sivaram1206/catalogue:v2
       envFrom:
         - configMapRef:
             name: catalogue-config
