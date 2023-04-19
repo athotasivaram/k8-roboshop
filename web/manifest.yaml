@@ -29,7 +29,7 @@ spec:
   type: LoadBalancer
   selector:
     name: web
-    tier: Frontend
+    tier: frontend
   ports:
     - protocol: TCP
       port: 80
