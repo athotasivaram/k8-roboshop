@@ -4,7 +4,7 @@ kind: ConfigMap
 metadata:
   name: catalogue-config
 data:
-  MONGO_URL: "mongo://mongo:27017/catalogue"
+  MONGO_URL: "mongo://mongo:80/catalogue"
 ---
 apiVersion: v1
 kind: Pod
