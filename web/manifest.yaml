@@ -14,12 +14,12 @@ spec:
       resources:
         requests:
           cpu: "150m"
-          memory: "125mi"
+          memory: "125Mi"
         limits:
           cpu: "150m"
-          memory: "125mi"
-        port:
-          containerPort: 80
+          memory: "125Mi"
+      ports:
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
