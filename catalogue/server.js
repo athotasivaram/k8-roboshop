@@ -154,7 +154,7 @@ app.get('/search/:text', (req, res) => {
 // set up Mongo
 function mongoConnect() {
     return new Promise((resolve, reject) => {
-        var mongoURL = process.env.MONGO_URL || 'mongo://mongo-service:80/catalogue';
+        var mongoURL = process.env.MONGO_URL || 'mongodb://mongo-service:80/catalogue';
         mongoClient.connect(mongoURL, (error, client) => {
             if(error) {
                 reject(error);
